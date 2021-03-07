@@ -1,0 +1,15 @@
+[package]
+name = "took-service"
+version = "0.1.0"
+authors = ["jiazifa <2332532718@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#static
+lazy_static = "1.4.0"
+
+[dependencies.took-models]
+version = "0.1"
+path = "../took-models"

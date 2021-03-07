@@ -1,0 +1,11 @@
+[package]
+name = "took-models"
+version = "0.1.0"
+authors = ["jiazifa <2332532718@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+rbatis = { version = "1.8.76", default-features = false, features = ["tokio1-mysql"] }

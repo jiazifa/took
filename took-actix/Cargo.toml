@@ -1,0 +1,29 @@
+[package]
+name = "took-actix"
+version = "0.1.0"
+authors = ["jiazifa <2332532718@qq.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+actix = "0.10"
+# web server
+actix-web = "3.3"
+actix-http = "2.2"
+
+config = "0.9"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+rbatis = { version = "1.8.76", default-features = false, features = ["tokio1-mysql"] }
+
+[dependencies.took-models]
+version = "0.1"
+path = "../took-models"
+
+[dependencies.took-service]
+version = "0.1"
+path = "../took-service"
